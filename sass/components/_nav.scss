@@ -1,0 +1,33 @@
+.navbar {
+  &-container {
+    justify-content: space-between;
+  }
+
+  &-nav {
+    display: none;
+  }
+
+  &-toggle {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+#mobile-close {
+  display: none;
+}
+
+.expanded {
+  #mobile-close {
+    display: block;
+  }
+  #mobile-open {
+    display: none;
+  }
+
+  & .navbar {
+    &-nav {
+      display: block;
+    }
+  }
+}
