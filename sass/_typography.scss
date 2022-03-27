@@ -6,3 +6,27 @@ html {
 
 $ff-dm: 'DM Serif Display', serif;
 $ff-karla: 'Karla', sans-serif;
+
+body {
+  font-family: $ff-karla;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-family: $ff-dm;
+}
+
+.text-neutral-100 {
+  color: $Very-Light-Gray;
+}
+
+.btn,
+.navbar-link {
+  font-size: 1.255rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}

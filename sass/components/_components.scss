@@ -1,0 +1,18 @@
+.container {
+  padding: 25px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px;
+  border: 2px solid $Very-Light-Gray;
+
+  background-color: transparent;
+
+  text-transform: uppercase;
+  color: $Very-Light-Gray;
+}
