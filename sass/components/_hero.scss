@@ -9,6 +9,9 @@
     height: 450px;
 
     background-image: url(../images/image-intro-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   &::after {
@@ -26,6 +29,7 @@
   }
 
   text-align: center;
+
   background-color: $Dark-Violet;
   background-image: url(../images/bg-pattern-intro-left-mobile.svg);
   background-repeat: no-repeat;

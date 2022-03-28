@@ -167,6 +167,7 @@ body {
 }
 
 .boxes > h2 {
+  text-align: center;
   margin: 10rem 0 5rem;
 }
 .boxes .flex-md {
@@ -231,6 +232,7 @@ body {
   background-image: url(../images/bg-pattern-mobile-nav.svg);
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: 100% 218px;
 }
 .navbar-item {
   margin: 1rem 0 2rem;
@@ -275,6 +277,9 @@ body {
   width: 100%;
   height: 450px;
   background-image: url(../images/image-intro-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero::after {
   content: "";
@@ -314,8 +319,10 @@ body {
   height: 200px;
   width: 100%;
   z-index: -1;
-  background-image: url(../../images/bg-pattern-footer-mobile.svg);
+  background-image: url(../images/bg-pattern-footer-mobile.svg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 .footer-nav {
   gap: 0 !important;

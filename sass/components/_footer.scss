@@ -18,8 +18,10 @@
     width: 100%;
     z-index: -1;
 
-    background-image: url(../../images/bg-pattern-footer-mobile.svg);
+    background-image: url(../images/bg-pattern-footer-mobile.svg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
   }
 
   &-nav {
