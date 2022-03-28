@@ -246,9 +246,6 @@ body {
   height: calc(100vh - 50px - 15px);
   background-color: #2b272f;
 }
-.expanded .navbar-nav-item {
-  margin: 1rem 0 2rem;
-}
 .expanded .navbar-nav::after {
   content: "";
   position: absolute;
@@ -260,6 +257,12 @@ body {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 218px;
+}
+.expanded .navbar-item {
+  margin: 1rem 0 2rem;
+}
+.expanded .navbar-btn {
+  padding-block: 15px;
 }
 
 @media (min-width: 1024px) {

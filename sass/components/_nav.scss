@@ -55,10 +55,6 @@
       height: calc(100vh - 50px - 15px); // logo + padding
       background-color: $Very-Dark-Violet;
 
-      &-item {
-        margin: 1rem 0 2rem;
-      }
-
       &::after {
         content: '';
         position: absolute;
@@ -72,6 +68,14 @@
         background-position: bottom;
         background-size: 100% 218px;
       }
+    }
+
+    &-item {
+      margin: 1rem 0 2rem;
+    }
+
+    &-btn {
+      padding-block: 15px;
     }
   }
 }
