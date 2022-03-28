@@ -297,4 +297,51 @@ body {
   margin: 30px 0 60px;
 }
 
+.footer {
+  position: relative;
+}
+.footer .flex-md {
+  gap: 2rem;
+}
+.footer .social {
+  gap: 1rem;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 0;
+  height: 200px;
+  width: 100%;
+  z-index: -1;
+  background-image: url(../../images/bg-pattern-footer-mobile.svg);
+  background-repeat: no-repeat;
+}
+.footer-nav {
+  gap: 0 !important;
+  padding-block: 10px;
+  margin-top: 3rem;
+  border-top: 1px solid #cdd6e4;
+}
+.footer-list {
+  margin: 0;
+  padding: 0 0 10px;
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #667a99;
+}
+.footer-list-item:first-child {
+  margin-block: 1.5rem;
+}
+.footer-list-link {
+  text-decoration: none;
+  color: #2d2640;
+  line-height: 2.2;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
