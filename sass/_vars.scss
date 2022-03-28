@@ -13,3 +13,11 @@ $Grayish-Blue-600: hsl(216, 20%, 50%);
 $Very-Dark-Violet: hsl(270, 9%, 17%);
 $Dark-Grayish-Violet: hsl(273, 4%, 51%);
 $Very-Light-Gray: hsl(0, 0%, 98%);
+
+$break-point-lg: 1024px;
+
+@mixin mq($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
