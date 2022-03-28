@@ -7,8 +7,14 @@
   align-items: center;
 }
 
+.flow {
+  > * + * {
+    margin-top: 1rem;
+  }
+}
+
 .btn {
-  padding: 10px;
+  padding: 10px 25px;
   border: 2px solid $Very-Light-Gray;
 
   background-color: transparent;

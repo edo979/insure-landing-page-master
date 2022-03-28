@@ -83,17 +83,30 @@ h2,
 h3,
 .h3 {
   font-family: "DM Serif Display", serif;
-}
-
-.text-neutral-100 {
   color: #fafafa;
+  font-weight: 400;
 }
 
-.btn,
-.navbar-link {
-  font-size: 1.255rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
+h1,
+.h1 {
+  font-size: 2.85rem;
+  line-height: 1;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.btn {
+  font-size: 0.9rem;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.text-neutral-100,
+p {
+  color: #fafafa;
 }
 
 body {
@@ -109,8 +122,12 @@ body {
   align-items: center;
 }
 
+.flow > * + * {
+  margin-top: 1rem;
+}
+
 .btn {
-  padding: 10px;
+  padding: 10px 25px;
   border: 2px solid #fafafa;
   background-color: transparent;
   text-transform: uppercase;
@@ -156,6 +173,11 @@ body {
   text-transform: uppercase;
   line-height: 1.65;
 }
+.navbar-btn, .navbar-link {
+  font-size: 1.255rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
 
 #mobile-close {
   display: none;
@@ -169,6 +191,43 @@ body {
 }
 .expanded .navbar-nav {
   display: flex;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  background-color: #2d2640;
+  background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left top 450px;
+}
+.hero::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 450px;
+  background-image: url(../images/image-intro-mobile.jpg);
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -180px;
+  right: 0;
+  height: 330px;
+  width: 100%;
+  background-image: url(../images/bg-pattern-intro-right-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.hero h1 {
+  margin-top: 70px;
+}
+.hero p {
+  padding-inline: 5px;
+}
+.hero button {
+  margin: 30px 0 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
