@@ -22,3 +22,56 @@
   text-transform: uppercase;
   color: $Very-Light-Gray;
 }
+
+.btn-secondary {
+  border-color: $Dark-Violet;
+}
+
+.flex-md {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boxes {
+  > h2 {
+    margin: 10rem 0 5rem;
+  }
+
+  .flex-md {
+    gap: 3rem;
+  }
+}
+
+.border-top {
+  &::before {
+    content: '';
+    display: block;
+    position: relative;
+    margin-inline: auto;
+    top: -2.5rem;
+    width: 50%;
+
+    border-top: 1px solid $Grayish-Blue;
+  }
+}
+
+.box {
+  text-align: center;
+  img {
+    margin-inline: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+.primary-box {
+  margin-block: 10rem 11rem;
+  padding-block: 5rem;
+
+  text-align: center;
+
+  background-color: $Dark-Violet;
+  background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
