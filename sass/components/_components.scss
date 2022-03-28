@@ -76,3 +76,21 @@
   background-repeat: no-repeat;
   background-position: right top;
 }
+
+@include mq($break-point-lg) {
+  .main-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .container {
+    padding-inline: 165px;
+  }
+
+  .border-top {
+    &::before {
+      margin-inline: 0;
+      width: 150px;
+      top: -3.75rem;
+    }
+  }
+}

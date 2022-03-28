@@ -66,3 +66,10 @@ p {
 .text-primary-300 {
   color: $Grayish-Blue-500;
 }
+
+@include mq($break-point-lg) {
+  h1,
+  .h1 {
+    font-size: 4.55rem;
+  }
+}
