@@ -1,5 +1,6 @@
 .footer {
   position: relative;
+  background-color: $Very-Light-Gray;
 
   .flex-md {
     gap: 2rem;
@@ -57,6 +58,33 @@
       line-height: 2.2;
 
       cursor: pointer;
+    }
+  }
+}
+
+@include mq($break-point-lg) {
+  .footer {
+    .container {
+      padding-top: 60px;
+    }
+
+    background-image: url(../images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+
+    &::before {
+      background-image: none;
+    }
+
+    &-nav {
+      justify-content: start;
+      align-items: start;
+      margin-top: 2rem;
+      padding-top: 2rem;
+
+      > ul {
+        flex: 1 1 25%;
+        text-align: left;
+      }
     }
   }
 }

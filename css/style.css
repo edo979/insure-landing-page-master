@@ -137,10 +137,6 @@ p {
     font-size: 4.55rem;
   }
 }
-body {
-  background-color: #fafafa;
-}
-
 .container {
   padding: 25px;
 }
@@ -248,6 +244,7 @@ body {
   }
 
   .primary-box {
+    margin-bottom: 8rem;
     padding: 70px 80px;
     background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
   }
@@ -431,6 +428,7 @@ body {
 }
 .footer {
   position: relative;
+  background-color: #fafafa;
 }
 .footer .flex-md {
   gap: 2rem;
@@ -476,6 +474,29 @@ body {
   color: #2d2640;
   line-height: 2.2;
   cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    background-image: url(../images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+  }
+  .footer .container {
+    padding-top: 60px;
+  }
+  .footer::before {
+    background-image: none;
+  }
+  .footer-nav {
+    justify-content: start;
+    align-items: start;
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+  .footer-nav > ul {
+    flex: 1 1 25%;
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
