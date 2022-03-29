@@ -156,10 +156,26 @@ p {
   background-color: transparent;
   text-transform: uppercase;
   color: #fafafa;
+  cursor: pointer;
+}
+.btn:hover, .btn:focus {
+  background-color: #2b272f;
+  color: #cdd6e4;
+  font-weight: 700;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: white;
+  color: #2b272f;
+  font-weight: 700;
 }
 
 .btn-secondary {
   border-color: #2d2640;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: white;
+  color: #cdd6e4;
 }
 
 .flex-md {
@@ -251,7 +267,7 @@ p {
   .primary-box h2 {
     font-size: 3.5rem;
     text-align: left;
-    padding-inline-end: 250px;
+    padding-inline-end: 240px;
   }
   .primary-box .btn {
     flex-shrink: 0;
@@ -345,6 +361,10 @@ p {
   .navbar-link {
     color: #748db4;
   }
+  .navbar-link:hover, .navbar-link:focus {
+    color: #2b272f;
+    font-weight: 700;
+  }
   .navbar-link, .navbar-btn {
     font-size: 1rem;
   }
@@ -393,7 +413,9 @@ p {
   padding-inline: 5px;
 }
 .hero button {
+  position: relative;
   margin: 30px 0 60px;
+  z-index: 3;
 }
 
 @media (min-width: 1024px) {
@@ -493,9 +515,25 @@ p {
     margin-top: 2rem;
     padding-top: 2rem;
   }
-  .footer-nav > ul {
+  .footer-list {
     flex: 1 1 25%;
     text-align: left;
+  }
+  .footer-list-link:hover, .footer-list-link:focus {
+    text-decoration: underline;
+  }
+
+  .social {
+    cursor: pointer;
+  }
+  .social a {
+    transition: transform 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  .social a:hover, .social a:focus {
+    transform: scale(1.5);
+  }
+  .social a:hover svg path, .social a:focus svg path {
+    fill: #2b272f;
   }
 }
 

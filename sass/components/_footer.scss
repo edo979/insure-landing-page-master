@@ -80,10 +80,32 @@
       align-items: start;
       margin-top: 2rem;
       padding-top: 2rem;
+    }
 
-      > ul {
-        flex: 1 1 25%;
-        text-align: left;
+    &-list {
+      flex: 1 1 25%;
+      text-align: left;
+
+      &-link {
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .social {
+    cursor: pointer;
+    a {
+      transition: transform 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
+      &:hover,
+      &:focus {
+        transform: scale(1.5);
+        svg path {
+          fill: $Very-Dark-Violet;
+        }
       }
     }
   }

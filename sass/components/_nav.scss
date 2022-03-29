@@ -107,6 +107,11 @@
 
     &-link {
       color: $Grayish-Blue-500;
+      &:hover,
+      &:focus {
+        color: $Very-Dark-Violet;
+        font-weight: 700;
+      }
     }
 
     &-link,

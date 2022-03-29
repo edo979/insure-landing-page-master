@@ -21,10 +21,34 @@
 
   text-transform: uppercase;
   color: $Very-Light-Gray;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $Very-Dark-Violet;
+    color: $Grayish-Blue-300;
+    font-weight: 700;
+  }
+}
+
+.btn-primary {
+  &:hover,
+  &:focus {
+    background-color: white;
+    color: $Very-Dark-Violet;
+    font-weight: 700;
+  }
 }
 
 .btn-secondary {
   border-color: $Dark-Violet;
+
+  &:hover,
+  &:focus {
+    background-color: white;
+    color: $Grayish-Blue-300;
+  }
 }
 
 .flex-md {
@@ -132,7 +156,7 @@
     h2 {
       font-size: 3.5rem;
       text-align: left;
-      padding-inline-end: 250px;
+      padding-inline-end: 240px;
     }
 
     .btn {
