@@ -93,4 +93,49 @@
       top: -3.75rem;
     }
   }
+
+  .flex-md {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .flow {
+    > * + * {
+      margin-top: 1.7rem;
+    }
+  }
+
+  .boxes {
+    > h2 {
+      margin-top: 21.25rem;
+      margin-bottom: 5.5rem;
+    }
+  }
+
+  .box,
+  .boxes > h2 {
+    text-align: left;
+  }
+
+  .box {
+    img {
+      margin-inline: 0;
+    }
+  }
+
+  .primary-box {
+    padding: 70px 80px;
+
+    background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+
+    h2 {
+      font-size: 3.5rem;
+      text-align: left;
+      padding-inline-end: 250px;
+    }
+
+    .btn {
+      flex-shrink: 0;
+    }
+  }
 }
